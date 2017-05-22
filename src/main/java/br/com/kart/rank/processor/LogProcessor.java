@@ -14,6 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -28,14 +29,10 @@ public class LogProcessor {
         Stream<String> fileLines = Files.lines(Paths.get(path));
         List<List<String>> logLines = new ArrayList<>();
         fileLines.skip(1).forEach(line -> {
-                List<String> lapLine = new ArrayList<>();
-                String[] lineLap = line.split("[\\s]");
-                for(String colmun: lineLap){
-                    if(colmun.trim().length() > 0){
-                        lapLine.add(colmun.trim());
-                    }
-                }
-                logLines.add(lapLine);
+            logLines.add(Arrays.stream(line.split("[\\s]"))
+                    .filter(column -> column.trim().length() > 0)
+                    .map(String::trim)
+                    .collect(Collectors.toList()));
         });
         return logLines.stream().map(LogProcessor::lapsProcessor).filter( lap -> lap != null).collect(Collectors.toList());
     }
