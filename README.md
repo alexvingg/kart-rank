@@ -7,7 +7,7 @@ Projeto desafio Kark Rank
 
 2 - Ir para a pasta target e rodar o comando: java -cp rank-kart.jar br.com.kart.rank.AppMain “LOCAL DO ARQUIVO DE LOG”
 
-OBS: O local do arquivo deve ser informado completo, ex: C:\\Users\\User\\Documents\\kart-rank-1.txt
+OBS: O local do arquivo deve ser informado completo, ex: C:/Users/User/Documents/kart-rank-1.txt
 
 ### Implementações
 
