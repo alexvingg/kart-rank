@@ -13,9 +13,9 @@ OBS: O local do arquivo deve ser informado completo, ex: C:/Users/User/Documents
 
 * Posição Chegada, Código Piloto, Nome Piloto, Qtde Voltas Completadas e Tempo Total de Prova
 - Descobrir a melhor volta de cada piloto
-+ Descobrir a melhor volta da corrida
-+ Calcular a velocidade média de cada piloto durante toda corrida
-+ Descobrir quanto tempo cada piloto chegou após o vencedor
+- Descobrir a melhor volta da corrida
+- Calcular a velocidade média de cada piloto durante toda corrida
+- Descobrir quanto tempo cada piloto chegou após o vencedor
 + Testes unitários
 
 ### Saída do log
