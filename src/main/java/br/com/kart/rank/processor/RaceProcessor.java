@@ -57,6 +57,18 @@ public class RaceProcessor {
             return p1.getTotalRaceTime().compareTo(p2.getTotalRaceTime());
         });
 
+        int position = 1;
+        for (Statistics statistic:statisticsList) {
+            statistic.setPosition(position);
+            if(position != 1){
+                statistic.setTimeBehindWinner(statistic.getTotalRaceTime().minusMinutes(
+                        statisticsList.get(0).getTotalRaceTime().getMinute()).minusSeconds(
+                        statisticsList.get(0).getTotalRaceTime().getSecond()).minusNanos(
+                        statisticsList.get(0).getTotalRaceTime().getNano()));
+            }
+            position++;
+        }
+
         return statisticsList;
     }
 }

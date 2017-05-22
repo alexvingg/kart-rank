@@ -14,6 +14,7 @@ import java.util.List;
 public class AppMain {
 
     public static void main(String[] args){
+
         if(args.length == 0){
             System.out.println("Error ! Please enter the path.");
         }else{
@@ -24,22 +25,13 @@ public class AppMain {
                 race.getLapList().addAll(lP.logProcessor(args[0]));
                 List<Statistics> statisticsList = rp.getRaceStatistics(race);
                 System.out.println("----------------------------------------------------------------------------------");
-                int position = 1;
-                for (Statistics stastistic : statisticsList){
-                    System.out.println("Position: " + position + " " + stastistic.getDriver().getCodDriver() + " - " +
-                            stastistic.getDriver().getName() + " " +
-                            "Laps: " + stastistic.getLapCompleted() + " - " +
-                            "Total Time: " + DateTimeUtil.getFormatDateTimeHour(stastistic.getTotalRaceTime()) + " - " +
-                            "Best Lap:" + DateTimeUtil.getFormatDateTimeHour(stastistic.getBestLapTime()) + " - " +
-                            "Speed Average: " + stastistic.getSpeedAverage());
-                    position++;
-                }
+                statisticsList.forEach(System.out::println);
                 Statistics statisctBestLap = rp.getBestLapRace(statisticsList);
                 System.out.println("Best Race Lap: " + DateTimeUtil.getFormatDateTimeHour(statisctBestLap.getBestLapTime())
                         + " " + statisctBestLap.getDriver().getCodDriver() + " - " + statisctBestLap.getDriver().getName());
                 System.out.println("----------------------------------------------------------------------------------");
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Error, please check the race log.");
             }
         }
     }

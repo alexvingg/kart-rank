@@ -1,6 +1,0 @@
-Hora                   Piloto         Nº Volta   Tempo Volta      Velocidade média da volta
-Hora                   Piloto         Nº Volta   Tempo Volta      Velocidade média da volta
-Hora                   Piloto         Nº Volta   Tempo Volta      Velocidade média da volta
-Hora                   Piloto         Nº Volta   Tempo Volta      Velocidade média da volta
-Hora                   Piloto         Nº Volta   Tempo Volta      Velocidade média da volta
-
