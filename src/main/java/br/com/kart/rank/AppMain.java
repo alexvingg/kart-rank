@@ -15,7 +15,7 @@ public class AppMain {
 
     public static void main(String[] args){
 
-        if(args.length == 0){
+        if(args.length != 0){
             System.out.println("Error ! Please enter the path.");
         }else{
             LogProcessor lP = new LogProcessor();
