@@ -16,27 +16,7 @@ OBS: O local do arquivo deve ser informado completo, ex: C:/Users/User/Documents
 + Descobrir a melhor volta da corrida
 + Calcular a velocidade média de cada piloto durante toda corrida
 + Descobrir quanto tempo cada piloto chegou após o vencedor
-
-## Testes unitários
-
-```
--------------------------------------------------------
- T E S T S
--------------------------------------------------------
-Running DateTimeUtilTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec
-Running LogProcessorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
-Running NumberUtilTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running RaceProcessorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-
-Results :
-
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
-
-```
++ Testes unitários
 
 ### Saída do log
 
