@@ -18,8 +18,6 @@ public class Lap {
 
     private Driver driverLap;
 
-    private Long timeLapMilisecond;
-
     public Lap() {
     }
 
