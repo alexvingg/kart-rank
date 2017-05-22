@@ -20,7 +20,7 @@ OBS: O local do arquivo deve ser informado completo, ex: C:/Users/User/Documents
 
 ### Saída do log
 
-```----------------------------------------------------------------------------------
+``` ----------------------------------------------------------------------------------
 Position: 1 038 - F.MASSA Laps: 4 - Total Time: 04:11.578 - Best Lap:01:02.769 - Speed Average: 44.24575
 
 Position: 2 002 - K.RAIKKONEN Laps: 4 - Total Time: 04:15.153 - Best Lap:01:03.076 - Speed Average: 43.62725 - Time Behind Winner: 00:03.575
@@ -36,4 +36,4 @@ Position: 6 015 - F.ALONSO Laps: 4 - Total Time: 04:54.221 - Best Lap:01:07.011 
 Position: 7 011 - S.VETTEL Laps: 3 - Total Time: 06:27.276 - Best Lap:01:18.097 - Speed Average: 25.745667 - Time Behind Winner: 02:15.698
 
 Best Race Lap: 01:02.152 026 - A.COSTA
-----------------------------------------------------------------------------------```
+---------------------------------------------------------------------------------- ```
